@@ -1,0 +1,41 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+} */
+
+.logo-bar {
+  width: 100%;
+  height: 120px;
+  background-color: #e0e0e0; /* subtle grey background */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.logo-track {
+  display: flex;
+  gap: 4rem;
+  animation: scroll 40s linear infinite;
+}
+
+.logo img {
+  max-height: 80px;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.logo img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
