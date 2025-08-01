@@ -200,7 +200,6 @@
 .product-header{
      background: linear-gradient(rgba(1, 10, 53, .8), rgba(1, 10, 53, .8)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
-    /* url(../products/img/carousel-1.jpg) */
 }
 
 .page-header .breadcrumb-item a,
@@ -683,6 +682,58 @@ body {
     .anchor-button:hover {
       background-color: #0056b3;
       color: white;
+    }
+
+
+    /* NAVIGATION SECTION FOR USERS DIRECTIONS ON HOW TO NAVIGATE WEBSITE  */
+    
+    .notice-banner {
+        background-color: #fffae6;
+        color: #333;
+        padding: 1rem 1.5rem;
+        border-bottom: 2px solid #f0c000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .notice-text {
+      flex: 1 1 70%;
+      font-size: 1rem;
+    }
+
+    .notice-text strong {
+      color: #d48806;
+    }
+
+    .dismiss-btn {
+      background-color: transparent;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #888;
+      transition: color 0.3s ease;
+    }
+
+    .dismiss-btn:hover {
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .notice-banner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .notice-text {
+        margin-bottom: 0.5rem;
+      }
+
+      .dismiss-btn {
+        align-self: flex-end;
+      }
     }
 
 
